@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Dec 29 16:17:33 2016
-
-@author: ijlee
-"""
 
 import pandas as pd
 import win32com.client as com

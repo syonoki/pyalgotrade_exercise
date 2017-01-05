@@ -8,7 +8,6 @@ Created on Thu Jan 05 14:53:37 2017
 from pyalgotrade import strategy
 from pyalgotrade.technical import bollinger
 
-
 class BollingerStrategy(strategy.BacktestingStrategy):
     def __init__(self, feed, instrument, initialCash, period, width):
         super(BollingerStrategy, self).__init__(feed, initialCash)
