@@ -21,6 +21,15 @@ class BollingerStrategy(strategy.BacktestingStrategy):
         self.middle = []
         self.lower = []
 
+    def getLower(self):
+        return self.__bollinger.getLowerBand()
+        
+    def getUpper(self):
+        return self.__bollinger.getUpperBand()
+        
+    def getMiddle(self):
+        return self.__bollinger.getMiddleBand()
+        
     def onEnterOk(self, position):
         execInfo = position.getEntryOrder().getExecutionInfo()
         self.info("BUY at $%.2f" % (execInfo.getPrice()))
